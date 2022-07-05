@@ -1,56 +1,52 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Project Name
+# Math Magicians
 
-> Description the project.
+> To-do list App is a tool to help users organize thier day by:
+
+ - Add new task to the list.
+ - Mark as completed.
+ - remove unwanted tasks to the todo list.
 
 
 ## Built With
 
-- Major languages
-- Frameworks
-- Technologies used
+- html
+- css
+- JavaScript
+- React
 
 ## Live Demo (if available)
 
 [Live Demo Link](https://livedemo.com)
 
 
-## Getting Started
+## Clone this repository
 
-**This is an example of how you may give instructions on setting up your project locally.**
-**Modify this file to match your project, remove sections that don't apply. For example: delete the testing section if the currect project doesn't require testing.**
+      $ git clone git@github.com:Brenda309/todo-list-app.git
+      $ cd todo-list-app
 
+## Run project
+      $ npm install
+      $ npm run start# this will make webpack watching for your changes in code
 
-To get a local copy up and running follow these simple example steps.
-
-### Prerequisites
 
 ### Setup
-
+- Text editor
+- Terminal
 ### Install
-
-### Usage
-
-### Run tests
-
-### Deployment
-
-
+    $ npx create-react-app ./
+    $ cd todo-list-app
+### Open page in browser
+    $ open dist/index.html
 
 ## Authors
 
-👤 **Author1**
+👤 **Brenda Wihogora**
 
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
-
-👤 **Author2**
-
-- GitHub: [@githubhandle](https://github.com/githubhandle)
-- Twitter: [@twitterhandle](https://twitter.com/twitterhandle)
-- LinkedIn: [LinkedIn](https://linkedin.com/in/linkedinhandle)
+- GitHub: [@Brenda309](https://github.com/Brenda309)
+- Twitter: [@BrendaWihogora](https://twitter.com/BrendaWihogora)
+- LinkedIn: [BrendaWihogora](https://linkedin.com/in/BrendaWihogora/)
 
 ## 🤝 Contributing
 
