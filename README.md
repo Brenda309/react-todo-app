@@ -2,7 +2,7 @@
 
 # Math Magicians
 
-> To-do list App is a tool to help users organize thier day by:
+> To-do list App is a tool to help users organize thier day. Users can:
 
  - Add new task to the list.
  - Mark as completed.
