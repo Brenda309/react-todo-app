@@ -1,6 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
-# Math Magicians
+# To-DO app
 
 > To-do list App is a tool to help users organize thier day. Users can:
 
