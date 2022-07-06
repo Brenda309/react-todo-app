@@ -3,6 +3,7 @@ import React from 'react';
 import Header from './Header';
 import TodosList from './TodosList.js';
 import InputTodo from './InputTodo';
+import TodoItem from './TodoItem';
 import { v4 as uuidv4 } from 'uuid';
 
 class TodoContainer extends React.Component {
@@ -60,6 +61,9 @@ class TodoContainer extends React.Component {
       todos: [...this.state.todos, newTodo],
     });
   };
+  setUpdate = (updatedTitle, id) => {
+    console.log(updatedTitle, id);
+  };
   render() {
     return (
       <div className="container">
@@ -70,6 +74,7 @@ class TodoContainer extends React.Component {
             todos={this.state.todos}
             handleChangeProps={this.handleChange}
             deleteTodoProps={this.delTodo}
+            setUpdate={this.setUpdate}
           />
         </div>
       </div>
