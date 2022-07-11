@@ -10,23 +10,7 @@ class TodoContainer extends React.Component {
   constructor() {
     super();
     this.state = {
-      todos: [
-        {
-          id: uuidv4(),
-          title: 'Setup development environment',
-          completed: true,
-        },
-        {
-          id: uuidv4(),
-          title: 'Develop website and add content',
-          completed: false,
-        },
-        {
-          id: uuidv4(),
-          title: 'Deploy to live server',
-          completed: false,
-        },
-      ],
+      todos: [],
     };
     this.handleChange = (id) => {
       this.setState((prevState) => ({
@@ -64,6 +48,22 @@ class TodoContainer extends React.Component {
   setUpdate = (updatedTitle, id) => {
     console.log(updatedTitle, id);
   };
+  componentDidUpdate(prevProps, prevState) {
+    if (prevState.todos !== this.state.todos) {
+      const temp = JSON.stringify(this.state.todos);
+      localStorage.setItem('todos', temp);
+    }
+  }
+  componentDidMount() {
+    const temp = localStorage.getItem('todos');
+    const loadedTodos = JSON.parse(temp);
+    if (loadedTodos) {
+      this.setState({
+        todos: loadedTodos,
+      });
+    }
+  }
+ 
   render() {
     return (
       <div className="container">
