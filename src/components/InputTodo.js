@@ -1,18 +1,27 @@
 /* eslint-disable */
-import React, {useState} from "react"
+
+import React, { useState } from 'react';
+
 
 const InputTodo = (props) => {
-  const [title, setTitle] = useState('');
+  const [inputText, setInputText] = useState({
+    title: '',
+  });
 
   const onChange = (e) => {
-    setTitle(e.target.value);
+    setInputText({
+      ...inputText,
+      [e.target.name]: e.target.value,
+    });
   };
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    if (title.trim()) {
-      props.addTodoProps(title);
-      setTitle('');
+    if (inputText.title.trim()) {
+      props.addTodoProps(inputText.title);
+      setInputText({
+        title: '',
+      });
     } else {
       alert('Please write item');
     }
@@ -24,7 +33,7 @@ const InputTodo = (props) => {
         type="text"
         className="input-text"
         placeholder="Add todo..."
-        value={title}
+        value={inputText.title}
         name="title"
         onChange={onChange}
       />
@@ -33,5 +42,4 @@ const InputTodo = (props) => {
   );
 };
 
-export default InputTodo
-
+export default InputTodo;
